@@ -17,6 +17,7 @@
 		116FA3901EA8E3310046283E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116FA38F1EA8E3310046283E /* Alamofire.framework */; };
 		1194D51B1EAB350E005078A5 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194D51A1EAB350E005078A5 /* ScheduleController.swift */; };
 		1194D51D1EAB360B005078A5 /* Schedulers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194D51C1EAB360B005078A5 /* Schedulers.swift */; };
+		1194D51F1EAB95A3005078A5 /* FlatMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194D51E1EAB95A3005078A5 /* FlatMapController.swift */; };
 		11F8623A1EAA138B0012D5B3 /* RotatePanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F862391EAA138B0012D5B3 /* RotatePanController.swift */; };
 		11F8623C1EAA57DC0012D5B3 /* TwitterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8623B1EAA57DC0012D5B3 /* TwitterController.swift */; };
 		11F862471EAA5FC60012D5B3 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F862461EAA5FC60012D5B3 /* SwiftyJSON.framework */; };
@@ -35,6 +36,7 @@
 		116FA38F1EA8E3310046283E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		1194D51A1EAB350E005078A5 /* ScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
 		1194D51C1EAB360B005078A5 /* Schedulers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedulers.swift; sourceTree = "<group>"; };
+		1194D51E1EAB95A3005078A5 /* FlatMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatMapController.swift; sourceTree = "<group>"; };
 		11F862391EAA138B0012D5B3 /* RotatePanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatePanController.swift; sourceTree = "<group>"; };
 		11F8623B1EAA57DC0012D5B3 /* TwitterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterController.swift; sourceTree = "<group>"; };
 		11F862461EAA5FC60012D5B3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				11F8623B1EAA57DC0012D5B3 /* TwitterController.swift */,
 				11F862391EAA138B0012D5B3 /* RotatePanController.swift */,
 				1194D51A1EAB350E005078A5 /* ScheduleController.swift */,
+				1194D51E1EAB95A3005078A5 /* FlatMapController.swift */,
 				1194D51C1EAB360B005078A5 /* Schedulers.swift */,
 				116415BE1EA8C45C0027B8CB /* Main.storyboard */,
 				116415C31EA8C45C0027B8CB /* LaunchScreen.storyboard */,
@@ -199,6 +202,7 @@
 				11F8623C1EAA57DC0012D5B3 /* TwitterController.swift in Sources */,
 				1194D51B1EAB350E005078A5 /* ScheduleController.swift in Sources */,
 				116415BB1EA8C45C0027B8CB /* AppDelegate.swift in Sources */,
+				1194D51F1EAB95A3005078A5 /* FlatMapController.swift in Sources */,
 				11F8623A1EAA138B0012D5B3 /* RotatePanController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
