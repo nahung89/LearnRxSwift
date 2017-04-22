@@ -17,7 +17,6 @@
 		116FA3901EA8E3310046283E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116FA38F1EA8E3310046283E /* Alamofire.framework */; };
 		11F8623A1EAA138B0012D5B3 /* RotatePanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F862391EAA138B0012D5B3 /* RotatePanController.swift */; };
 		11F8623C1EAA57DC0012D5B3 /* TwitterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8623B1EAA57DC0012D5B3 /* TwitterController.swift */; };
-		11F862451EAA5D060012D5B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F862441EAA5D060012D5B3 /* User.swift */; };
 		11F862471EAA5FC60012D5B3 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F862461EAA5FC60012D5B3 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		116FA38F1EA8E3310046283E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		11F862391EAA138B0012D5B3 /* RotatePanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatePanController.swift; sourceTree = "<group>"; };
 		11F8623B1EAA57DC0012D5B3 /* TwitterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterController.swift; sourceTree = "<group>"; };
-		11F862441EAA5D060012D5B3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		11F862461EAA5FC60012D5B3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,11 +75,10 @@
 				116415BC1EA8C45C0027B8CB /* ViewController.swift */,
 				11F8623B1EAA57DC0012D5B3 /* TwitterController.swift */,
 				11F862391EAA138B0012D5B3 /* RotatePanController.swift */,
-				11F8623D1EAA5A1D0012D5B3 /* Model */,
 				116415BE1EA8C45C0027B8CB /* Main.storyboard */,
-				116415C11EA8C45C0027B8CB /* Assets.xcassets */,
 				116415C31EA8C45C0027B8CB /* LaunchScreen.storyboard */,
 				116415C61EA8C45C0027B8CB /* Info.plist */,
+				116415C11EA8C45C0027B8CB /* Assets.xcassets */,
 			);
 			path = LearnRxSwift;
 			sourceTree = "<group>";
@@ -95,14 +92,6 @@
 				116415CF1EA8C50E0027B8CB /* RxSwift.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		11F8623D1EAA5A1D0012D5B3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				11F862441EAA5D060012D5B3 /* User.swift */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +192,6 @@
 				11F8623C1EAA57DC0012D5B3 /* TwitterController.swift in Sources */,
 				116415BB1EA8C45C0027B8CB /* AppDelegate.swift in Sources */,
 				11F8623A1EAA138B0012D5B3 /* RotatePanController.swift in Sources */,
-				11F862451EAA5D060012D5B3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

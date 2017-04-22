@@ -17,10 +17,10 @@ class RotatePanController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        testGesture()
+        testGestures()
     }
     
-    func testGesture() {
+    func testGestures() {
         let panGesture = UIPanGestureRecognizer()
         panGesture.delegate = self
         
@@ -37,37 +37,10 @@ class RotatePanController: UIViewController {
         let bothGesturesStarted = Observable.zip([panStartObservable, rotateStartObservable])
         let bothGesturesEnded = Observable.merge([panEndObservable, rotateEndObservable])
         
-        /*
-        rotateEndObservable
-            .subscribe { _ in
-                print("1")
-            }
-            .addDisposableTo(disposeBag)
-        
-        panEndObservable
-            .subscribe { _ in
-                print("2")
-            }
-            .addDisposableTo(disposeBag)
-        
-        bothGesturesStarted
-            .subscribe { _ in
-                print("3")
-            }
-            .addDisposableTo(disposeBag)
-        
-        bothGesturesEnded
-            .subscribe { _ in
-                print("4")
-            }
-            .addDisposableTo(disposeBag)
-         */
-        
-        
         
         bothGesturesStarted.subscribe(onNext: { [unowned self] _ in
-            Observable<Int>.interval(0.5, scheduler: MainScheduler.instance)
-                .take(10)
+            Observable<Int>.interval(1, scheduler: MainScheduler.instance)
+                .take(5)
                 .takeUntil(bothGesturesEnded)
                 .subscribe(onNext: { count in
                     print("tick: \(count)")

@@ -13,6 +13,18 @@ import RxCocoa
 import Alamofire
 import SwiftyJSON
 
+struct User {
+    let id: Int
+    let name: String
+    let avatarUrl: String
+    
+    init(json: JSON) {
+        id = json["id"].intValue
+        name = json["login"].stringValue
+        avatarUrl = json["avatar_url"].stringValue
+    }
+}
+
 class TwitterController : UIViewController {
     
     var disposeBag = DisposeBag()
@@ -42,7 +54,7 @@ class TwitterController : UIViewController {
         
         let responseStream = requestStream.flatMap { url in
             return Observable<[User]>.create { observer in
-                let request = Alamofire.request(url).responseData(completionHandler: { (response) in
+                let request = Alamofire.request(url).validate().responseData(completionHandler: { (response) in
                     switch response.result {
                     case let .success(data):
                         let jsons = JSON.init(data: data)
@@ -64,15 +76,25 @@ class TwitterController : UIViewController {
         
         for (label, button) in [labelA: buttonA, labelB: buttonB, labelC: buttonC] as! [UILabel: UIButton] {
             let clickStream = button.rx.tap.asObservable().startWith(())
-            let userStream: Observable<User?> = Observable.combineLatest(responseStream, clickStream)
-                .map { (users, _) in
-                    guard users.count > 0 else { return nil }
-                    return users[Int(arc4random()) % users.count]
-            }
+            let userStream: Observable<User?> = Observable.combineLatest(responseStream, clickStream, resultSelector: { (users, _) in
+                guard users.count > 0 else { return nil }
+                return users[Int(arc4random()) % users.count]
+            })
+            
             let suggestionStream = Observable.of(nilRefreshStream, userStream).merge()
-            suggestionStream.subscribe(onNext: { (user) in
-                guard let user = user else { return label.text = "LOADING.." }
-                label.text = user.name
+            
+            suggestionStream.subscribe({ (event) in
+                switch event {
+                case let .next(user):
+                    guard let user = user else { return label.text = "LOADING.." }
+                    label.text = user.name
+                case let .error(error):
+                    print("error: \(error)")
+                case .completed:
+                    print("finish?!")
+                    break
+                    
+                }
             }).addDisposableTo(disposeBag)
         }
     }
