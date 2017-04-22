@@ -44,6 +44,7 @@ class TwitterController : UIViewController {
         listenObservable()
     }
     
+    // https://kipalog.com/posts/Reactive-Programming-voi-RxSwift
     func listenObservable() {
     
         let refreshStream = buttonRefresh.rx.tap.asObservable()
@@ -97,5 +98,14 @@ class TwitterController : UIViewController {
                 }
             }).addDisposableTo(disposeBag)
         }
+        
+        // RefreshTap        -s--------------------o-------------------------------o--------------------------|--->
+        // Request           -r--------------------r-------------------------------r--------------------------!--->
+        // (1)Response       ------[u]------------------[u]-----------------------------[u]-------------------|--->
+        // (2)ButtonATap     -s----------a-------------------------a----------------------------a-------------|--->
+        // Combine(1,2)=U    -N-----Ur---Ur--------------Ur--------Ur--------------------Ur-----Ur------------|--->
+        // (3)NilRefesh      -N--------------------N-------------------------------N--------------------------|--->
+        // Merge(U,3)=L1     -L-----Ur---Ur--------L-----Ur--------Ur--------------L-----Ur-----Ur------------|--->
+        
     }
 }

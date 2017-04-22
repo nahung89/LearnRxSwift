@@ -49,7 +49,6 @@ class RotatePanController: UIViewController {
                 }).addDisposableTo(self.disposeBag)
             
         }).addDisposableTo(disposeBag)
-        
     }
 }
 
