@@ -27,7 +27,7 @@ class ExampleController: UIViewController {
     }
     
     func bindUI() {
-        // textField.rx.text.asObservable().bind(to: label.rx.text).addDisposableTo(disposeBag)
+         textField.rx.text.asObservable().bind(to: label.rx.text).addDisposableTo(disposeBag)
     }
     
     func learnVariable() {
@@ -90,4 +90,24 @@ class ExampleController: UIViewController {
         }.addDisposableTo(disposeBag)
     }
     
+    
+    func testDoMore() {
+        Observable.of(10, 20).do(onNext: { (a) in
+            print("doNext")
+        }, onError: { (error) in
+            print("error", error)
+        }, onCompleted: {
+            print("complete")
+        }, onSubscribe: {
+            print("subcribe")
+        }, onSubscribed: {
+            print("subcribed")
+        }) {
+            print("disposed")
+            }
+            .subscribe { (event) in
+                print("event", event)
+            }.addDisposableTo(disposeBag)
+
+    }
 }

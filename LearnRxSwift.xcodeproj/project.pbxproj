@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1108CA4E1EAC3B35004540CF /* TrailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108CA4D1EAC3B35004540CF /* TrailController.swift */; };
+		1108CA4E1EAC3B35004540CF /* TraitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108CA4D1EAC3B35004540CF /* TraitController.swift */; };
 		116415BB1EA8C45C0027B8CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116415BA1EA8C45C0027B8CB /* AppDelegate.swift */; };
 		116415BD1EA8C45C0027B8CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116415BC1EA8C45C0027B8CB /* ViewController.swift */; };
 		116415C01EA8C45C0027B8CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116415BE1EA8C45C0027B8CB /* Main.storyboard */; };
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1108CA4D1EAC3B35004540CF /* TrailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailController.swift; sourceTree = "<group>"; };
+		1108CA4D1EAC3B35004540CF /* TraitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraitController.swift; sourceTree = "<group>"; };
 		116415B71EA8C45C0027B8CB /* LearnRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		116415BA1EA8C45C0027B8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		116415BC1EA8C45C0027B8CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 				116415BA1EA8C45C0027B8CB /* AppDelegate.swift */,
 				116415BC1EA8C45C0027B8CB /* ViewController.swift */,
 				11D080341EABBDAE007EA501 /* ExampleController.swift */,
-				1108CA4D1EAC3B35004540CF /* TrailController.swift */,
+				1108CA4D1EAC3B35004540CF /* TraitController.swift */,
 				11F8623B1EAA57DC0012D5B3 /* TwitterController.swift */,
 				11F862391EAA138B0012D5B3 /* RotatePanController.swift */,
 				1194D51A1EAB350E005078A5 /* ScheduleController.swift */,
@@ -207,7 +207,7 @@
 				1194D51D1EAB360B005078A5 /* Schedulers.swift in Sources */,
 				11F8623C1EAA57DC0012D5B3 /* TwitterController.swift in Sources */,
 				11D080351EABBDAE007EA501 /* ExampleController.swift in Sources */,
-				1108CA4E1EAC3B35004540CF /* TrailController.swift in Sources */,
+				1108CA4E1EAC3B35004540CF /* TraitController.swift in Sources */,
 				1194D51B1EAB350E005078A5 /* ScheduleController.swift in Sources */,
 				116415BB1EA8C45C0027B8CB /* AppDelegate.swift in Sources */,
 				1194D51F1EAB95A3005078A5 /* FlatMapController.swift in Sources */,

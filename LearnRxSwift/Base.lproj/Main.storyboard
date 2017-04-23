@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Yy2-9i-BOW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="a5o-2h-Gck">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -120,6 +120,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYx-OD-f39" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1228" y="816.34182908545733"/>
+        </scene>
+        <!--Trail Controller-->
+        <scene sceneID="orz-Ax-mWh">
+            <objects>
+                <viewController id="a5o-2h-Gck" customClass="TrailController" customModule="LearnRxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tLh-LU-R3o"/>
+                        <viewControllerLayoutGuide type="bottom" id="HFR-I4-h0z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dAh-k5-Ec7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2AI-0M-EaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2196" y="826"/>
         </scene>
         <!--Twitter Controller-->
         <scene sceneID="aGu-UJ-Agd">
