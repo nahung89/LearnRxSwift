@@ -11,14 +11,12 @@ import RxSwift
 import RxCocoa
 import Alamofire
 
-class ViewController: UIViewController {
+class SearchViewController: UIViewController {
 
     let disposeBag = DisposeBag()
     
-    
-    var shownCities = [String]() // Data source for UITableView
-    let allCities = ["New York", "London","London1","London2","London3", "Oslo", "Warsaw", "Berlin", "Praga"] // Our mocked API data source
-    let all = (["", ""])
+    var shownCities: [String] = []
+    let allCities = ["New York", "London","London1","London2","London3", "Oslo", "Warsaw", "Berlin", "Praga"]
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -33,7 +31,7 @@ class ViewController: UIViewController {
         .orEmpty
         .throttle(0.5, scheduler: MainScheduler.instance)
         .distinctUntilChanged()
-        .subscribe(onNext: { (value) in
+        .subscribe(onNext: { [unowned self] (value) in
             self.shownCities = self.allCities.filter({ $0.hasPrefix(value) })
             self.tableView.reloadData()
         })
@@ -41,7 +39,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension SearchViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return shownCities.count

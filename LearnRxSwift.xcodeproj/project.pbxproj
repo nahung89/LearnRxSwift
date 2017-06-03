@@ -7,29 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1108CA4E1EAC3B35004540CF /* TraitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108CA4D1EAC3B35004540CF /* TraitController.swift */; };
+		1108CA4E1EAC3B35004540CF /* TraitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108CA4D1EAC3B35004540CF /* TraitViewController.swift */; };
+		114157501EC6F4BA005C6586 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141574F1EC6F4BA005C6586 /* PickerViewController.swift */; };
+		114157531EC6F90E005C6586 /* UIImagePickerController+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114157521EC6F90E005C6586 /* UIImagePickerController+RxSwift.swift */; };
 		116415BB1EA8C45C0027B8CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116415BA1EA8C45C0027B8CB /* AppDelegate.swift */; };
-		116415BD1EA8C45C0027B8CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116415BC1EA8C45C0027B8CB /* ViewController.swift */; };
+		116415BD1EA8C45C0027B8CB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116415BC1EA8C45C0027B8CB /* SearchViewController.swift */; };
 		116415C01EA8C45C0027B8CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116415BE1EA8C45C0027B8CB /* Main.storyboard */; };
 		116415C21EA8C45C0027B8CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116415C11EA8C45C0027B8CB /* Assets.xcassets */; };
 		116415C51EA8C45C0027B8CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116415C31EA8C45C0027B8CB /* LaunchScreen.storyboard */; };
 		116415D01EA8C50E0027B8CB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116415CE1EA8C50E0027B8CB /* RxCocoa.framework */; };
 		116415D11EA8C50E0027B8CB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116415CF1EA8C50E0027B8CB /* RxSwift.framework */; };
 		116FA3901EA8E3310046283E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116FA38F1EA8E3310046283E /* Alamofire.framework */; };
-		1194D51B1EAB350E005078A5 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194D51A1EAB350E005078A5 /* ScheduleController.swift */; };
+		1193BF0F1EDA66C500CFB64E /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193BF0E1EDA66C500CFB64E /* CircleViewController.swift */; };
+		1193BF111EDAA9D900CFB64E /* SumUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193BF101EDAA9D900CFB64E /* SumUpViewController.swift */; };
+		1194D51B1EAB350E005078A5 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194D51A1EAB350E005078A5 /* ScheduleViewController.swift */; };
 		1194D51D1EAB360B005078A5 /* Schedulers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194D51C1EAB360B005078A5 /* Schedulers.swift */; };
-		1194D51F1EAB95A3005078A5 /* FlatMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194D51E1EAB95A3005078A5 /* FlatMapController.swift */; };
-		11D080351EABBDAE007EA501 /* ExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D080341EABBDAE007EA501 /* ExampleController.swift */; };
-		11F8623A1EAA138B0012D5B3 /* RotatePanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F862391EAA138B0012D5B3 /* RotatePanController.swift */; };
-		11F8623C1EAA57DC0012D5B3 /* TwitterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8623B1EAA57DC0012D5B3 /* TwitterController.swift */; };
+		1194D51F1EAB95A3005078A5 /* FlatMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194D51E1EAB95A3005078A5 /* FlatMapViewController.swift */; };
+		11C46FC51EE25D7900F8D1DC /* ThrottleDebounceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C46FC41EE25D7900F8D1DC /* ThrottleDebounceViewController.swift */; };
+		11CF89D81EC6B65C00BC70DC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CF89D71EC6B65C00BC70DC /* MainViewController.swift */; };
+		11CF89DA1EC6B94300BC70DC /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CF89D91EC6B94300BC70DC /* ObjcExceptionBridging.framework */; };
+		11CF89DD1EC6D18F00BC70DC /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CF89DC1EC6D18F00BC70DC /* EventViewController.swift */; };
+		11F22DB41EB0B1920019C79E /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F22DB31EB0B1920019C79E /* XCGLogger.framework */; };
+		11F8623A1EAA138B0012D5B3 /* MergeZipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F862391EAA138B0012D5B3 /* MergeZipViewController.swift */; };
+		11F8623C1EAA57DC0012D5B3 /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8623B1EAA57DC0012D5B3 /* OperationViewController.swift */; };
 		11F862471EAA5FC60012D5B3 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F862461EAA5FC60012D5B3 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1108CA4D1EAC3B35004540CF /* TraitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraitController.swift; sourceTree = "<group>"; };
+		1108CA4D1EAC3B35004540CF /* TraitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraitViewController.swift; sourceTree = "<group>"; };
+		1141574F1EC6F4BA005C6586 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		114157521EC6F90E005C6586 /* UIImagePickerController+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+RxSwift.swift"; sourceTree = "<group>"; };
 		116415B71EA8C45C0027B8CB /* LearnRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		116415BA1EA8C45C0027B8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		116415BC1EA8C45C0027B8CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		116415BC1EA8C45C0027B8CB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		116415BF1EA8C45C0027B8CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		116415C11EA8C45C0027B8CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		116415C41EA8C45C0027B8CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,12 +47,18 @@
 		116415CE1EA8C50E0027B8CB /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		116415CF1EA8C50E0027B8CB /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		116FA38F1EA8E3310046283E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		1194D51A1EAB350E005078A5 /* ScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		1193BF0E1EDA66C500CFB64E /* CircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
+		1193BF101EDAA9D900CFB64E /* SumUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumUpViewController.swift; sourceTree = "<group>"; };
+		1194D51A1EAB350E005078A5 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		1194D51C1EAB360B005078A5 /* Schedulers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedulers.swift; sourceTree = "<group>"; };
-		1194D51E1EAB95A3005078A5 /* FlatMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatMapController.swift; sourceTree = "<group>"; };
-		11D080341EABBDAE007EA501 /* ExampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleController.swift; sourceTree = "<group>"; };
-		11F862391EAA138B0012D5B3 /* RotatePanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatePanController.swift; sourceTree = "<group>"; };
-		11F8623B1EAA57DC0012D5B3 /* TwitterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterController.swift; sourceTree = "<group>"; };
+		1194D51E1EAB95A3005078A5 /* FlatMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatMapViewController.swift; sourceTree = "<group>"; };
+		11C46FC41EE25D7900F8D1DC /* ThrottleDebounceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrottleDebounceViewController.swift; sourceTree = "<group>"; };
+		11CF89D71EC6B65C00BC70DC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		11CF89D91EC6B94300BC70DC /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = Carthage/Build/iOS/ObjcExceptionBridging.framework; sourceTree = "<group>"; };
+		11CF89DC1EC6D18F00BC70DC /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		11F22DB31EB0B1920019C79E /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		11F862391EAA138B0012D5B3 /* MergeZipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeZipViewController.swift; sourceTree = "<group>"; };
+		11F8623B1EAA57DC0012D5B3 /* OperationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
 		11F862461EAA5FC60012D5B3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CF89DA1EC6B94300BC70DC /* ObjcExceptionBridging.framework in Frameworks */,
+				11F22DB41EB0B1920019C79E /* XCGLogger.framework in Frameworks */,
 				11F862471EAA5FC60012D5B3 /* SwiftyJSON.framework in Frameworks */,
 				116FA3901EA8E3310046283E /* Alamofire.framework in Frameworks */,
 				116415D01EA8C50E0027B8CB /* RxCocoa.framework in Frameworks */,
@@ -61,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114157511EC6F8E0005C6586 /* LIbraries */ = {
+			isa = PBXGroup;
+			children = (
+				114157521EC6F90E005C6586 /* UIImagePickerController+RxSwift.swift */,
+			);
+			name = LIbraries;
+			sourceTree = "<group>";
+		};
 		116415AE1EA8C45C0027B8CB = {
 			isa = PBXGroup;
 			children = (
@@ -81,14 +107,10 @@
 		116415B91EA8C45C0027B8CB /* LearnRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				114157511EC6F8E0005C6586 /* LIbraries */,
+				11CF89DB1EC6B96500BC70DC /* Examples */,
 				116415BA1EA8C45C0027B8CB /* AppDelegate.swift */,
-				116415BC1EA8C45C0027B8CB /* ViewController.swift */,
-				11D080341EABBDAE007EA501 /* ExampleController.swift */,
-				1108CA4D1EAC3B35004540CF /* TraitController.swift */,
-				11F8623B1EAA57DC0012D5B3 /* TwitterController.swift */,
-				11F862391EAA138B0012D5B3 /* RotatePanController.swift */,
-				1194D51A1EAB350E005078A5 /* ScheduleController.swift */,
-				1194D51E1EAB95A3005078A5 /* FlatMapController.swift */,
+				11CF89D71EC6B65C00BC70DC /* MainViewController.swift */,
 				1194D51C1EAB360B005078A5 /* Schedulers.swift */,
 				116415BE1EA8C45C0027B8CB /* Main.storyboard */,
 				116415C31EA8C45C0027B8CB /* LaunchScreen.storyboard */,
@@ -101,12 +123,32 @@
 		116415CD1EA8C50D0027B8CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11CF89D91EC6B94300BC70DC /* ObjcExceptionBridging.framework */,
+				11F22DB31EB0B1920019C79E /* XCGLogger.framework */,
 				11F862461EAA5FC60012D5B3 /* SwiftyJSON.framework */,
 				116FA38F1EA8E3310046283E /* Alamofire.framework */,
 				116415CE1EA8C50E0027B8CB /* RxCocoa.framework */,
 				116415CF1EA8C50E0027B8CB /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11CF89DB1EC6B96500BC70DC /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				116415BC1EA8C45C0027B8CB /* SearchViewController.swift */,
+				1108CA4D1EAC3B35004540CF /* TraitViewController.swift */,
+				11F862391EAA138B0012D5B3 /* MergeZipViewController.swift */,
+				11F8623B1EAA57DC0012D5B3 /* OperationViewController.swift */,
+				1194D51A1EAB350E005078A5 /* ScheduleViewController.swift */,
+				1194D51E1EAB95A3005078A5 /* FlatMapViewController.swift */,
+				11CF89DC1EC6D18F00BC70DC /* EventViewController.swift */,
+				1141574F1EC6F4BA005C6586 /* PickerViewController.swift */,
+				1193BF0E1EDA66C500CFB64E /* CircleViewController.swift */,
+				11C46FC41EE25D7900F8D1DC /* ThrottleDebounceViewController.swift */,
+				1193BF101EDAA9D900CFB64E /* SumUpViewController.swift */,
+			);
+			name = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +231,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjcExceptionBridging.framework",
 			);
 			outputPaths = (
 			);
@@ -203,15 +247,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				116415BD1EA8C45C0027B8CB /* ViewController.swift in Sources */,
+				116415BD1EA8C45C0027B8CB /* SearchViewController.swift in Sources */,
+				11CF89D81EC6B65C00BC70DC /* MainViewController.swift in Sources */,
+				11CF89DD1EC6D18F00BC70DC /* EventViewController.swift in Sources */,
 				1194D51D1EAB360B005078A5 /* Schedulers.swift in Sources */,
-				11F8623C1EAA57DC0012D5B3 /* TwitterController.swift in Sources */,
-				11D080351EABBDAE007EA501 /* ExampleController.swift in Sources */,
-				1108CA4E1EAC3B35004540CF /* TraitController.swift in Sources */,
-				1194D51B1EAB350E005078A5 /* ScheduleController.swift in Sources */,
+				11F8623C1EAA57DC0012D5B3 /* OperationViewController.swift in Sources */,
+				1108CA4E1EAC3B35004540CF /* TraitViewController.swift in Sources */,
+				114157531EC6F90E005C6586 /* UIImagePickerController+RxSwift.swift in Sources */,
+				1194D51B1EAB350E005078A5 /* ScheduleViewController.swift in Sources */,
+				114157501EC6F4BA005C6586 /* PickerViewController.swift in Sources */,
 				116415BB1EA8C45C0027B8CB /* AppDelegate.swift in Sources */,
-				1194D51F1EAB95A3005078A5 /* FlatMapController.swift in Sources */,
-				11F8623A1EAA138B0012D5B3 /* RotatePanController.swift in Sources */,
+				1194D51F1EAB95A3005078A5 /* FlatMapViewController.swift in Sources */,
+				11C46FC51EE25D7900F8D1DC /* ThrottleDebounceViewController.swift in Sources */,
+				1193BF111EDAA9D900CFB64E /* SumUpViewController.swift in Sources */,
+				11F8623A1EAA138B0012D5B3 /* MergeZipViewController.swift in Sources */,
+				1193BF0F1EDA66C500CFB64E /* CircleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +309,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -309,6 +360,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -334,12 +386,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = Z2HAJP9Q8N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = LearnRxSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nah.LearnRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,12 +405,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = Z2HAJP9Q8N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = LearnRxSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nah.LearnRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,7 +430,7 @@
 				116415C81EA8C45C0027B8CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		116415C91EA8C45C0027B8CB /* Build configuration list for PBXNativeTarget "LearnRxSwift" */ = {
 			isa = XCConfigurationList;
@@ -383,7 +439,7 @@
 				116415CB1EA8C45C0027B8CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

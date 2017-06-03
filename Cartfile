@@ -1,7 +1,7 @@
-github "ReactiveX/RxSwift" ~> 3.0
+github "ReactiveX/RxSwift"
 github "Alamofire/Alamofire"
-github "Moya/Moya"
 github "SwiftyJSON/SwiftyJSON"
+github "DaveWoodCom/XCGLogger"
 
 #carthage update --platform iOS
 #carthage build --platform iOS

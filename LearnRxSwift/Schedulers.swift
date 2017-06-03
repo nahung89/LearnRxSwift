@@ -21,5 +21,10 @@ class Schedulers {
     
     static var initialzie: SchedulerType {
         return ConcurrentDispatchQueueScheduler.init(qos: DispatchQoS.userInitiated)
+        
+    }
+    
+    static var serial: SchedulerType {
+        return SerialDispatchQueueScheduler(qos: .default)
     }
 }

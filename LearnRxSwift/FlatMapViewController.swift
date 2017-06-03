@@ -10,12 +10,13 @@ import Foundation
 import UIKit
 import RxSwift
 
-class FlatMapController: UIViewController {
+class FlatMapViewController: UIViewController {
     
     var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetch1()
         fetch2()
     }
     
@@ -23,25 +24,23 @@ class FlatMapController: UIViewController {
         let stream = schools().flatMap { (schools) in
             return Observable.from(schools)
             }
-            .delay(1, scheduler: MainScheduler.instance)
             .flatMap { (school) in
                 return self.students(school)
             }
             .flatMap { (students) in
                 return Observable.from(students)
             }
-            .delay(1, scheduler: MainScheduler.instance)
             .flatMap { (student) in
                 return self.scores(student)
             }
-            .flatMap { (scrores) in
-                return Observable.from(scrores)
+            .flatMap { (scores) in
+                return Observable.from(scores)
         }
         
         stream.subscribe(onNext: { (score) in
             print(score)
         }, onCompleted: {
-            print("complete-1")
+            log.info("complete-1")
         })
             .addDisposableTo(disposeBag)
     }
@@ -60,34 +59,35 @@ class FlatMapController: UIViewController {
                 return Observable.from(students)
             })
             .concat()
-            .flatMap({ (student) in
+            .map({ (student) in
                 return self.scores(student)
             })
+            .concat()
             .flatMap({ (scores) in
-            return Observable.from(scores)
+                return Observable.from(scores)
             })
         
         stream.subscribe(onNext: { (score) in
             print(score)
         }, onCompleted: {
-            print("complete-2")
+            log.info("complete-2")
         })
             .addDisposableTo(disposeBag)
     }
     
     func schools() -> Observable<[String]> {
-        return Observable<[String]>.just(createEntity("school"))
+        return Observable<[String]>.just(createEntity("🏠"))
     }
     
     func students(_ school: String) -> Observable<[String]> {
-        return Observable<[String]>.just(createEntity(school+"_student"))
+        return Observable<[String]>.just(createEntity(school+"_🚶"))
     }
     
     func scores(_ student: String) -> Observable<[String]> {
-        return Observable<[String]>.just(createEntity(student+"_score"))
+        return Observable<[String]>.just(createEntity(student+"_⛳"))
     }
     
     func createEntity(_ name: String) -> [String] {
-        return (0...5).map{ "\(name)_\($0)" }
+        return (0...5).map{ "\(name)\($0)" }
     }
 }

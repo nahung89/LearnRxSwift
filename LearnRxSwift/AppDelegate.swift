@@ -7,6 +7,30 @@
 //
 
 import UIKit
+import XCGLogger
+import RxSwift
+
+let log: XCGLogger = {
+    let log = XCGLogger.default
+    log.setup(level: .debug,
+              showFunctionName: true,
+              showThreadName: true,
+              showLevel: true,
+              showFileNames: true,
+              showLineNumbers: true,
+              writeToFile: nil,
+              fileLevel: .debug)
+    let emojiLogFormatter = PrePostFixLogFormatter()
+    emojiLogFormatter.apply(prefix: " 🗯 ", postfix: " 🗯 ", to: .verbose)
+    emojiLogFormatter.apply(prefix: " 🔹 ", postfix: " 🔹 ", to: .debug)
+    emojiLogFormatter.apply(prefix: " ℹ️ ", postfix: " ℹ️ ", to: .info)
+    emojiLogFormatter.apply(prefix: " ⚠️ ", postfix: " ⚠️ ", to: .warning)
+    emojiLogFormatter.apply(prefix: " ‼️ ", postfix: " ‼️ ", to: .error)
+    emojiLogFormatter.apply(prefix: " 💣 ", postfix: " 💣 ", to: .severe)
+    log.formatters = [emojiLogFormatter]
+    return log
+}()
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +39,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        log.info("start")
+        
+//        _ = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
+//            .subscribe(onNext: { _ in
+//                print("Resource count \(RxSwift.Resources.total)")
+//            })
+        
         return true
     }
 

@@ -25,7 +25,7 @@ struct User {
     }
 }
 
-class TwitterController : UIViewController {
+class OperationViewController : UIViewController {
     
     var disposeBag = DisposeBag()
     
@@ -90,9 +90,9 @@ class TwitterController : UIViewController {
                     guard let user = user else { return label.text = "LOADING.." }
                     label.text = user.name
                 case let .error(error):
-                    print("error: \(error)")
+                    log.error(error)
                 case .completed:
-                    print("finish?!")
+                    log.info("finish?!")
                     break
                     
                 }

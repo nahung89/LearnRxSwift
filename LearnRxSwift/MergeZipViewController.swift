@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import UIKit
 
-class RotatePanController: UIViewController {
+class MergeZipViewController: UIViewController {
     
     var disposeBag = DisposeBag()
     
@@ -37,23 +37,20 @@ class RotatePanController: UIViewController {
         let bothGesturesStarted = Observable.zip([panStartObservable, rotateStartObservable])
         let bothGesturesEnded = Observable.merge([panEndObservable, rotateEndObservable])
         
-        
         bothGesturesStarted.subscribe(onNext: { [unowned self] _ in
             Observable<Int>.interval(1, scheduler: MainScheduler.instance)
-                .take(5)
+                .take(3)
                 .takeUntil(bothGesturesEnded)
                 .subscribe(onNext: { count in
-                    print("tick: \(count)")
+                    log.info("tick: \(count)")
                 }, onCompleted: {
-                    print("completed")
+                    log.info("completed")
                 }).addDisposableTo(self.disposeBag)
-            
         }).addDisposableTo(disposeBag)
     }
 }
 
-extension RotatePanController: UIGestureRecognizerDelegate {
-    
+extension MergeZipViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
